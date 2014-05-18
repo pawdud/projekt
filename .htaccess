@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^o-nas\.html about.php?page=about               [L]
+RewriteRule ^oferta\.html offer.php?page=offer              [L]
+RewriteRule ^portfolio\.html portfolio.php?page=portfolio   [L]
+RewriteRule ^cennik\.html pricelist.php?page=pricelist      [L]
+RewriteRule ^kontakt\.html contact.php?page=contact         [L]

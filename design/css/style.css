@@ -1,0 +1,781 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-05-12, 13:20:45
+    Author     : pawel
+*/
+
+body {    
+    /*background-color: #222222;*/    
+    /*font-family: 'Play';*/
+    font-family: Englebert;
+    font-weight: 400;
+}
+
+
+header {
+
+    padding-top: 50px;
+    /*height: 100px;*/
+    background-color: #08e2ea;
+}
+
+header .wrapper {
+    position: relative;
+    max-width: 1000px;   
+    min-width: 290px;
+    margin: 0 auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+#logo {
+    background: url("../img/icon-adress.png") no-repeat left center;
+    float: left;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+header nav {
+    float: right;
+}
+
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+header nav ul li {
+    display: block;
+    float: left;    
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header nav ul li a {
+    display: block;
+    padding-top: 48px;
+    color: white;
+    text-decoration: none;
+}
+
+
+header nav ul li a {
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+    color: #06a3a9;
+}
+
+header nav ul li a.home {
+    background-image: url("../img/icons/icon-home.png");
+}
+
+header nav ul li a.home:hover,  header nav ul li a.home.active{
+    background-image: url("../img/icons/icon-home-active-hover.png");
+
+}
+
+header nav ul li a.about {
+    background-image: url("../img/icons/icon-about-us.png"); 
+}
+
+header nav ul li a.about:hover, header nav ul li a.about.active{
+    background-image: url("../img/icons/icon-about-us-hover-active.png");    
+}
+
+header nav ul li a.offer {
+    background-image: url("../img/icons/icon-offer.png");
+
+}
+header nav ul li a.offer:hover, header nav ul li a.offer.active  {
+    background-image: url("../img/icons/icon-offer-active-hover.png");    
+}
+
+header nav ul li a.portfolio {
+    background-image: url("../img/icons/icon-portfolio.png");
+}
+
+header nav ul li a.portfolio:hover,  header nav ul li a.portfolio.active{
+    background-image: url("../img/icons/icon-portfolio-active-hover.png");   
+}
+
+header nav ul li a.price {
+    background-image: url("../img/icons/icon-price-list.png");
+}
+
+header nav ul li a.price:hover,  header nav ul li a.price.active{
+    background-image: url("../img/icons/icon-price-list-active-hover.png");  
+}
+
+header nav ul li a.contact {
+    background-image: url("../img/icons/icon-contact.png");
+}
+
+header nav ul li a.contact:hover,  header nav ul li a.contact.active{
+    background-image: url("../img/icons/icon-contact-active-hover.png"); 
+}
+
+
+/** SLIDES **/
+
+section.container {
+    position: relative;
+    width: auto;    
+    margin: 0 auto;
+    background-color: #f7f7f7;
+}
+
+section.container .wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    min-width: 290px;
+    box-sizing: padding-box;
+    padding-bottom: 50px;    
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.opacity-line {
+    position: absolute; 
+
+    height: 10px; 
+    opacity: 0.3;     
+    z-index: 15;
+    width: 100%;
+}
+
+.opacity-line.top {
+    top:0; 
+    background-color: #08e2ea;
+}
+.opacity-line.bottom {
+    bottom: 0;
+    background-color: #222222;
+}
+
+
+#slider_content1, #slider_content2, #slider_content3,#slider_content4, #slider_content5, #slider_content6 {
+    line-height: 30px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #08e2ea;
+    font-family: 'Open Sans', sans-serif;
+    width:350px;
+    position:absolute;
+    top:15%;
+    left:15%;
+    display:none;
+    z-index:11;
+    font-size: 20px;
+}
+
+#slider_content1 > h3, #slider_content2 > h3, #slider_content3 > h3,#slider_content4 > h3, #slider_content5 > h3, #slider_content6 > h3 {
+    color: #0000FF;
+    font-size: 24px;
+}
+
+
+
+/** FOOTER **/
+footer {
+    width: auto;    
+    padding-top: 60px;
+    background-color: #222222;    
+}
+
+footer .wrapper {
+    max-width: 1000px;  
+    min-width: 290px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin: 0 auto;
+
+}
+
+footer .wrapper:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 20px;
+
+}
+
+
+footer div.col {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;   
+}
+
+
+span.contact {
+    background: url("../img/icons/icon-mobile-tel.png") no-repeat left center;
+    padding: 8px 0 8px 25px; 
+}
+
+
+footer div.social {
+    text-align: right;
+}
+
+footer div.social a{
+    margin-right: 40px;
+
+}
+
+/** ABOUT **/
+#cnt-our-advantages:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#cnt-our-advantages .cnt-advantage {
+    position: relative;
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+
+#cnt-our-advantages .cnt-advantage:nth-of-type(3n){
+    margin-right: 0;
+} 
+
+#cnt-our-advantages img {
+    width: 100%;
+    height: auto;
+}
+
+
+#cnt-our-advantages .cnt-advantage .zoom {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  url("../img/about/loopka.png") no-repeat center center;
+    opacity: 0.6;
+    transition: opacity .5s ease;   
+}
+
+#about-why-us .zoom:hover {   
+    opacity: 1;
+}
+
+#about-why-us li img {
+    width: 300px;
+    height: 225px;
+    border: 4px solid #07E2EA;
+}
+
+
+.ui-tooltip, .arrow:after {
+    background: white;
+    border: 2px solid #E9E9E9;
+}
+
+.ui-tooltip {
+    padding: 10px 20px;
+    color: black;
+    border-radius: 12px;
+    font:  16px "Helvetica Neue", Sans-Serif;
+    box-shadow: 0 0 7px black;
+}
+
+.arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+}
+
+.arrow.top {
+    top: -16px;
+    bottom: auto;
+}
+
+.arrow.left {
+    left: 20%;
+}
+
+.arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px black;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    tranform: rotate(45deg);
+}
+
+.arrow.top:after {
+    bottom: -20px;
+    top: auto;
+}
+
+
+/** OFFER **/
+
+.offer-cnt {
+    float: left;
+    width: 32%;
+    height: auto;
+    position: relative;
+    color: #ffffff;
+    margin-bottom: 50px;
+    /*overflow: hidden;*/
+}
+
+
+.offer-cnt {
+    margin-right: 2%;
+}
+
+.offer-cnt:nth-of-type(3n){
+    margin-right: 0;
+}
+
+
+.offer-cnt-inner {
+    width: 100%;   
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer-cnt .image {
+    width: 100%;
+    height: auto;
+}
+
+
+.offer-cnt .icon {    
+    z-index: 100;
+    position: absolute; 
+    border-radius: 50px;
+    box-shadow: 0 0 10px -3px #000000;
+    left: 40%;
+    top: -40px;
+}
+
+.offer-cnt h3 {
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 25px;
+    padding-top: 10%;
+    height: 40%;
+    text-align: center;
+}
+
+.offer-cnt article {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3%, 89%, 92%, 0.5);   
+    transition-property: top background-color;
+    transition-duration: 0.5s;
+}
+
+.offer-cnt article:hover {
+    top: 0;
+    background-color: rgba(3%, 89%, 92%, 1);
+    transition-property: top background-color;
+    transition-duration: 0.5s;
+
+}
+
+.offer-cnt article p {
+    text-align: center;
+    padding: 0 10px;
+}
+
+/** KONTAKT **/
+
+#contact-cnt-address .contact-phone {
+    background: url("../img/icons/icon-mobile-tel.png") no-repeat left center;
+    padding: 8px 0 8px 30px; 
+}
+
+#contact-cnt-address .contact-email {
+    margin-top: 40px;
+    background: url("../img/icons/icon-e-mail.png") no-repeat left center;
+    padding: 8px 0 8px 40px; 
+}
+
+#contact-cnt-address a {
+    color: black;
+}
+
+#contact-cnt-address {
+    width: 50%;
+    float: left;
+}
+
+#contact-cnt-form {
+    width: 50%;
+    float: left;
+}
+
+
+#form-contact input[type='text'], #form-contact textarea {
+    display: block;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border: 1px solid #EDECEC;
+    font-size: 18px;
+    color: black;
+    background-color: #F3F2F2;
+}
+
+#form-contact input[type='text']{   
+    width: 30%;
+    margin-right: 4.5%;   
+    float: left;
+
+}
+
+#form-contact input[type='text']:nth-of-type(3n){
+    margin-right: 0;
+}
+
+#form-contact textarea {   
+    margin-top: 10px;
+    width: 99%; 
+    height: 250px;
+}
+
+#form-contact th {
+    width: 70px;
+}
+
+/** CENNIK **/
+.price-column {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+
+div.price-column:nth-of-type(3n){
+    margin-right: 0;
+}
+
+#price-column-2 article, #price-column-3 article {
+    margin-top: 30px;
+}
+
+.price-column h2 {
+    color: white; 
+    position: relative; 
+    padding: 40px 40px; 
+    font-size: 25px; 
+    text-align: center; 
+    background-color: #08e2ea;
+}
+
+.price-column article {
+    margin-bottom: 50px;
+}  
+
+.price-column img {
+    position: absolute; 
+    left: 40%; 
+    top: -40px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px -3px #000000;
+}
+
+.price-column h3 {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.price-column .price {
+    display: inline-block;
+    color: #08e2ea;    
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.price-right {
+    position: absolute;
+    right: 5px;
+    text-align: left;
+}
+
+.price-center {    
+    width: 100%;
+    text-align: center;
+}
+
+
+.price-column .desc {
+    font-size: 20px;
+    color: #B1B1B1;
+}
+
+
+
+/* RESPONSIVE */
+
+/* 1) HEADER */
+
+@media (max-width: 999px){
+
+
+    /* HEADER */
+
+    #logo {
+        float: none;
+    }
+
+    header nav {
+        width: 580px;
+        float: none;
+        margin: auto;
+    }
+
+    header nav ul li {
+        /* padding: 0 8px; */
+    }
+
+
+    /* O NAS  */
+
+    #cnt-our-advantages .cnt-advantage {
+        margin-right: 4%;        
+    }
+
+    #cnt-our-advantages .cnt-advantage {
+        width: 48%;
+    }
+
+    #cnt-our-advantages .cnt-advantage:nth-of-type(2n+2){
+        margin-right: 0;
+    } 
+
+    /* OFERTA */
+    div.offer-cnt {
+        width: 48%;    
+        margin-right: 4%;
+    }  
+
+    div.offer-cnt:nth-of-type(n) {
+        margin-right: 4%;
+    }
+
+    div.offer-cnt:nth-of-type(2n){
+        margin-right: 0;
+    }
+
+    /* CENNIK */
+    div.price-column {
+        width: 48%;
+    }
+
+    div.price-column:nth-of-type(n){
+        margin-right: 4%;
+    }
+
+    div.price-column:nth-of-type(2n){
+        margin-right: 0;
+    }
+
+    /* KONTAKT */
+
+    #form-contact input[type='text']:nth-of-type(3n){
+        margin-right: 0;
+    }
+
+    #form-contact input[type='text']{   
+        width: 99%;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 600px){ /* KOMORKA */
+
+
+    /* HEADER */
+
+    #logo {
+        float: none;
+        text-align: center;
+    }
+
+    header nav {
+        width: 100%;
+        float: none;        
+    }
+
+    header nav ul li {
+        float: none;
+        /*padding: 5px 0;*/
+        border-bottom: 1px solid white;
+    }
+    header nav ul li a {
+        background-position: 22% 50%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        width: 100%;        
+    }
+
+    header nav ul li {
+        /* padding: 0 8px; */
+    }
+
+
+
+
+
+    header nav ul li {
+        /* padding: 0 8px; */
+    }
+
+
+    /* O NAS  */
+
+    #cnt-our-advantages .cnt-advantage {
+        margin-right: 0;
+        margin-bottom: 4%;
+    }
+
+    #cnt-our-advantages .cnt-advantage {
+        width: 100%;
+        float: none;
+    }
+
+
+    /* OFERTA */
+    div.offer-cnt {
+        width: 100%;           
+    }  
+
+    div.offer-cnt:nth-of-type(n) {
+        margin-right: 0;
+    }    
+
+
+    /* CENNIK */
+    div.price-column {
+        width: 100%;
+    }
+
+    div.price-column:nth-of-type(n){
+        margin-right: 0;
+    }
+
+
+    /* KONTAKT */
+
+    #contact-cnt-address {
+        width: 100%;
+        float: none;
+    }
+
+    #contact-cnt-form {
+        width: 100%;
+        float: none;
+    }
+
+
+
+
+    /* FOOTER */
+
+    footer div.col {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }      
+
+
+    footer div.social a:last-child {
+        margin-right: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/** MISCELANOUS **/
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;    
+}
+
+.title {
+    color: #07E2EA;
+}
+
+h2.title {
+    font-size: 35px;
+    padding: 30px 0 10px 0;
+    background: url("../img/title-bg.png") no-repeat bottom left;
+    text-transform: uppercase;
+}
+
+h3.title {
+    font-size: 20px;
+    padding: 30px 0 20px 0;
+}
+
+.clear {
+    clear: both;
+}
